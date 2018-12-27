@@ -1,0 +1,9 @@
+<h3>
+    {{titulo}}</h3>
+<hr>
+<br>
+
+
+<form method="POST" action=""> {% csrf_token %} {{ formulario.as_p }}
+    <input type="submit" value="Registrate" />
+</form>

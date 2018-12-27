@@ -21,5 +21,7 @@ from entrada import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.inicio, name='inicio')
+    url(r'^inicio/', views.inicio, name='inicio'),
+    url(r'^$', views.home, name='home'),
+    url(r'^contact/', views.contact, name='contact')
 ]

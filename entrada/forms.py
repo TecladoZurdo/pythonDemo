@@ -15,6 +15,7 @@ class RegModelForm(forms.ModelForm):
              raise forms.ValidationError("Se requiere un email que  termine con .com") 
         return email    
 
-class RegForm(forms.Form):
-    nombre = forms.CharField(max_length=100)
+class ContacForm(forms.Form):
+    nombre = forms.CharField(required=False)
     email = forms.EmailField()
+    mensaje = forms.CharField(widget=forms.Textarea)
